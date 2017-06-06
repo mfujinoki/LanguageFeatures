@@ -24,5 +24,13 @@ namespace LanguageFeatures.Models
                 }
             }
         }
+        public static IEnumerable<Product> Filter(this IEnumerable<Product> productEnum, Func<Product, bool> selectorPram){
+            foreach(Product prod in productEnum)
+            {
+                if(selectorPram(prod)){
+                    yield return prod;
+                }
+            }
+        }
     }
 }
