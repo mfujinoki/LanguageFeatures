@@ -11,7 +11,7 @@ namespace LanguageFeatures.Controllers
         // GET: Home
         public string Index()
         {
-            return "Navigate to a URL to show an example";
+            return "Navigate to a URL to show an example";//
 
         }
         public ViewResult AutoProperty()
